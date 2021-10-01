@@ -6,10 +6,15 @@
         xmlns:local="clr-namespace:TamanyoTexto"
         mc:Ignorable="d"
         Icon="assets/128.ico"
-        Title="2.7.TamanyoTexto" Height="450" Width="800">
+        Title="2.7.TamanyoTexto" Height="400" Width="900">
     <Grid>
-        <TextBlock x:Name="TextoTextBlock" HorizontalAlignment="Left" Margin="61,108,0,0" TextWrapping="Wrap" Text="Desarollo de Interfaces" VerticalAlignment="Top" Height="93" Width="681" TextAlignment="Center" FontSize="36"/>
-        <RadioButton GroupName="Tamaño" Content="Pequeño" HorizontalAlignment="Left" Margin="109,314,0,0" VerticalAlignment="Top" Height="17" IsChecked="True" RenderTransformOrigin="0.5,0.5" Width="74" Checked="RadioButton_Check">
+        <TextBlock x:Name="TextoTextBlock" HorizontalAlignment="Left" Margin="0,110,0,0" TextWrapping="Wrap" Text="Desarollo de Interfaces" VerticalAlignment="Top" Height="134" Width="892" TextAlignment="Center" FontSize="36" Foreground="#FF39A3E0" FontWeight="Bold" FontFamily="Segoe UI Black" 
+  >
+            <TextBlock.Effect>
+                <DropShadowEffect/>
+            </TextBlock.Effect>
+        </TextBlock>
+        <RadioButton Tag="36" GroupName="Tamaño" Content="Pequeño" HorizontalAlignment="Left" Margin="161,315,0,0" VerticalAlignment="Top" Height="17" RenderTransformOrigin="0.5,0.5" Width="74" Checked="RadioButton_Checked">
             <RadioButton.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform ScaleX="3" ScaleY="3"/>
@@ -19,7 +24,7 @@
                 </TransformGroup>
             </RadioButton.RenderTransform>
         </RadioButton>
-        <RadioButton GroupName="Tamaño" Content="Mediano" HorizontalAlignment="Left" Margin="357,314,0,0" VerticalAlignment="Top" Height="16" Width="71" RenderTransformOrigin="0.5,0.5">
+        <RadioButton Tag="48" GroupName="Tamaño" Content="Mediano" IsChecked="True" HorizontalAlignment="Left" Margin="409,315,0,0" VerticalAlignment="Top" Height="16" Width="71" RenderTransformOrigin="0.5,0.5" Checked="RadioButton_Checked">
             <RadioButton.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform ScaleX="3" ScaleY="3"/>
@@ -29,7 +34,7 @@
                 </TransformGroup>
             </RadioButton.RenderTransform>
         </RadioButton>
-        <RadioButton GroupName="Tamaño" Content="Grande" HorizontalAlignment="Left" Margin="598,315,0,0" VerticalAlignment="Top" Height="17" Width="61" RenderTransformOrigin="0.5,0.5">
+        <RadioButton GroupName="Tamaño" Tag="72" Content="Grande" HorizontalAlignment="Left" Margin="650,316,0,0" VerticalAlignment="Top" Height="17" Width="61" RenderTransformOrigin="0.5,0.5" Checked="RadioButton_Checked">
             <RadioButton.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform ScaleX="3" ScaleY="3"/>

@@ -25,9 +25,11 @@ namespace TamanyoTexto
             InitializeComponent();
         }
 
-        private void RadioButton_Check(object sender, RoutedEventArgs e)
+        private void RadioButton_Checked(object sender, RoutedEventArgs e)
         {
-            //Por ahora solo esta en el pequeño
+            TextoTextBlock.FontSize = double.Parse((sender as RadioButton).Tag.ToString());
         }
+
+        
     }
 }
